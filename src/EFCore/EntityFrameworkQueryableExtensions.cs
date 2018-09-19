@@ -2603,7 +2603,6 @@ namespace Microsoft.EntityFrameworkCore
         /// </returns>
         public static IQueryable<TEntity> WithTag<TEntity>(
             [NotNull] this IQueryable<TEntity> source, [NotNull] [NotParameterized] string tag)
-            where TEntity : class
         {
             Check.NotNull(source, nameof(source));
             Check.NotEmpty(tag, nameof(tag));
